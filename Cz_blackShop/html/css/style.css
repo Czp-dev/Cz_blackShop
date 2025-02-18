@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+}
+
+.first-dialogue {
+    display: none;
+    flex-direction: column;
+    width: 630px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+    border-radius: 5PX;
+    animation: show 0.3s ease-in;
+}
+
+.name {
+    margin-top: 5px;
+    width: 100%;
+    height: 25%;
+}
+
+.name h1{
+    margin-left: 15px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.text h3 {
+    margin-left: 15px;
+    color: white;
+    font-family: roboto, sans-serif;
+}
+
+.next {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.next button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.next  i {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.all-second {
+    display: none;
+    flex-direction: column;
+    animation: show 0.3s ease-in;
+}
+
+.second-dialogue {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+
+.btn button {
+    width: 30%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: show 0.6s ease-in;
+}
+.btn button:hover {
+    background-color: rgba(32, 32, 32, 0.7)
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
